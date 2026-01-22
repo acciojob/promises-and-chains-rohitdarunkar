@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const form = document.getElementById("form");
 const ageInput = document.getElementById("age");
 const nameInput = document.getElementById("name");
@@ -10,7 +9,7 @@ form.addEventListener("submit", function (e) {
   const name = nameInput.value;
 
   if (!age || !name) {
-    alert("Please enter valid details.");
+    alert("Please enter valid details"); // no dot
     return;
   }
 
@@ -25,6 +24,6 @@ form.addEventListener("submit", function (e) {
   });
 
   promise
-    .then((msg) => alert(msg))
-    .catch((msg) => alert(msg));
+    .then(msg => alert(msg))
+    .catch(msg => alert(msg));
 });
